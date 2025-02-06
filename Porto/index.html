@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Swiper CSS -->
+ <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+ <!-- Swiper JS -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ananda Ardian Pratama Putra</title>
+    <link rel="stylesheet" href="styles.css">
+   
+
+</head>
+ 
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-gray-800 text-white p-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Branding -->
+            <h1 class="text-2xl font-bold tracking-wide">
+                <a href="#" class="hover:text-yellow-400 transition-colors duration-300"></a>
+            </h1>
+    
+            <!-- Navigation Menu -->
+            <nav>
+                <ul class="flex space-x-6 text-lg font-semibold">
+                    <li><a href="#home" class="hover:text-yellow-400 transition-colors duration-300">Home</a></li>
+                    <li><a href="#about" class="hover:text-yellow-400 transition-colors duration-300">About</a></li>
+                    <li><a href="#experience" class="hover:text-yellow-400 transition-colors duration-300">Experience</a></li>
+                    <li><a href="#skills" class="hover:text-yellow-400 transition-colors duration-300">Skills</a></li>
+                    <li><a href="#portfolio" class="hover:text-yellow-400 transition-colors duration-300">Portfolio</a></li>
+                    <li><a href="#achievements" class="hover:text-yellow-400 transition-colors duration-300">Achievements</a></li>
+                    <li><a href="#contact" class="hover:text-yellow-400 transition-colors duration-300">Contact</a></li>
+                </ul>
+            </nav>
+    
+            <!-- Dark Mode Toggle Button -->
+            <button id="dark-mode-toggle" class="p-2 rounded-full hover:bg-gray-700 transition-colors duration-300">
+                <img src="moon.png" alt="Dark Mode Toggle" class="w-6 h-6">
+            </button>
+        </div>
+    </header>
+    
+    <section id="home" class="bg-cover bg-center h-screen flex flex-col items-center justify-center" style="background-image: url('close-up-metallic-basketball-hoop.jpg');">
+        <div class="text-center text-white bg-black bg-opacity-50 p-8 rounded-lg shadow-lg">
+            <img src="Ananda Ardian Pratama Putra S.Kom.jpg" alt="Nanda's Photo" class="rounded-full shadow-lg w-48 h-48 mb-4 border-4 border-white">
+            <h1 class="text-5xl font-bold">Hi, I'm Nanda</h1>
+            <p class="text-xl mt-4">Welcome to my portfolio</p>
+            <div class="mt-6">
+                
+                <a href="CV_Ananda Ardian Pratama Putra baru.pdf" target="_blank" class="download-cv-button">Download CV</a>
+            </div>
+        </div>
+    </section>
+        
+    
+    
+    
+
+    
+
+    <section id="about" class="container mx-auto p-8 bg-cover bg-center" style="background-image: url('jhgg.jpg');">
+        <h2 class="text-4xl font-bold mb-2 text-center text-gray-800 dark:text-white">About Me</h2>
+        <p class="text-center text-gray-600 dark:text-gray-300 mb-6">Let me introduce myself</p>
+        <div class="flex flex-col md:flex-row items-start bg-white dark:bg-gray-900 bg-opacity-95 dark:bg-opacity-80 rounded-lg shadow-md p-6">
+            <!-- Foto -->
+            <div class="w-full md:w-1/3 flex justify-center md:justify-start mb-6 md:mb-0">
+                <img src="IMG_20220405.jpg" alt="Ananda Ardian Pratama Putra" class="shadow-lg w-64 h-auto border-4 border-yellow-500">
+            </div>
+    
+            <!-- Informasi Detail -->
+            <div class="w-full md:w-2/3 md:pl-8">
+                <div class="grid grid-cols-2 gap-x-8 gap-y-2 text-lg text-gray-800 dark:text-white mb-6 bg-gray-200 dark:bg-gray-700 bg-opacity-90 dark:bg-opacity-60 p-4 rounded-md">
+                    <p><strong>FullName :</strong> Ananda Ardian Pratama Putra</p>
+                    <p><strong>Gender :</strong> Male</p>
+                    <p><strong>Address :</strong> Mayong Lor Village Rt 03 Rw 06 Jepara, Central Java </p>
+                    <p><strong>Age :</strong> 24</p>
+                    <p><strong>City :</strong> Jepara, Central Java</p>
+                    <p><strong>Bachelor :</strong> Software Engineer</p>
+                    <p><strong>Last Education :</strong> Telkom University</p>
+                </div>
+    
+                <!-- Deskripsi Singkat -->
+                <div class="bg-yellow-100 dark:bg-yellow-800 bg-opacity-90 dark:bg-opacity-80 p-6 rounded-md shadow-lg">
+                    <p class="text-lg text-gray-800 dark:text-white leading-relaxed">
+                        <strong>Hello there, my name is <span class="font-semibold text-yellow-600 dark:text-yellow-400">Ananda Ardian Pratama Putra</span></strong>, a graduate of Software Engineering from <strong><span class="font-semibold text-yellow-600 dark:text-yellow-400">Telkom University</span> (2023)</strong>. Focused on <strong>Software Testing, Data Analysis, and Web Development</strong>. Enjoys exploring new knowledge and seeking challenges.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+
+
+
+    <section id="experience" class="bg-white p-8">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4 text-center">Experience</h2>
+            <div class="flowchart">
+                <div class="flowchart-item">
+                    <div class="flowchart-content">
+                        <h3 class="text-2xl font-semibold">Web Specialist <span class="job-type">Full Time</span></h3>
+                        <p>PT Arka Radhika Kreatif</p>
+                        <p class="description">Responsible for developing and maintaining company websites, ensuring optimal performance, user experience, and SEO best practices.</p>
+                        <p class="category">Category: Professional</p>
+                    </div>
+                    <div class="arrow">↓</div>
+                </div>
+                <div class="flowchart-item">
+                    <div class="flowchart-content">
+                        <h3 class="text-2xl font-semibold">Data Analyst Intern <span class="job-type">Internship</span></h3>
+                        <p>PT Telkom Indonesia</p>
+                        <p class="description">Analyzed data to support decision-making processes, created visualizations, and reported insights to management.</p>
+                        <p class="category">Category: Professional</p>
+                    </div>
+                    <div class="arrow">↓</div>
+                </div>
+                <div class="flowchart-item">
+                    <div class="flowchart-content">
+                        <h3 class="text-2xl font-semibold">Assistant Lecturer <span class="job-type">Part Time</span></h3>
+                        <p>Database, RPL Application Implementation, RPL System Analysis and Design</p>
+                        <p class="description">Assisted in teaching database management, software engineering practices, and system analysis courses.</p>
+                        <p class="category">Category: Teaching</p>
+                    </div>
+                    <div class="arrow">↓</div>
+                </div>
+                <div class="flowchart-item">
+                    <div class="flowchart-content">
+                        <h3 class="text-2xl font-semibold">Assistant Practicum <span class="job-type">Part Time</span></h3>
+                        <p>PBO, KPL, Software Testing</p>
+                        <p class="description">Guided students through practical sessions on programming, software engineering, and testing methodologies.</p>
+                        <p class="category">Category: Teaching</p>
+                    </div>
+                    <div class="arrow">↓</div>
+                </div>
+                <div class="flowchart-item">
+                    <div class="flowchart-content">
+                        <h3 class="text-2xl font-semibold">Member of Medkom Division <span class="job-type">Committee</span></h3>
+                        <p>Alksandria Kudus</p>
+                        <p class="description">Contributed to the media and communication division, managing social media and organizing events.</p>
+                        <p class="category">Category: Committee</p>
+                    </div>
+                    <div class="arrow">↓</div>
+                </div>
+                <div class="flowchart-item">
+                    <div class="flowchart-content">
+                        <h3 class="text-2xl font-semibold">Vice Chairman of Medkom Division <span class="job-type">Committee</span></h3>
+                        <p>Alksandria Kudus</p>
+                        <p class="description">Led the media and communication division, overseeing projects and coordinating team efforts.</p>
+                        <p class="category">Category: Committee</p>
+                    </div>
+                    <div class="arrow">↓</div>
+                </div>
+                <div class="flowchart-item">
+                    <div class="flowchart-content">
+                        <h3 class="text-2xl font-semibold">Head of Student Advocacy Division <span class="job-type">Seasonal</span></h3>
+                        <p>HMRPL Telkom University</p>
+                        <p class="description">Advocated for student needs and concerns, organized workshops and support sessions.</p>
+                        <p class="category">Category: Leadership</p>
+                    </div>
+                    <div class="arrow">↓</div>
+                </div>
+                <div class="flowchart-item">
+                    <div class="flowchart-content">
+                        <h3 class="text-2xl font-semibold">Member of Verification and Validation Division <span class="job-type">Seasonal</span></h3>
+                        <p>KPU HMRPL</p>
+                        <p class="description">Ensured the integrity of the election process through thorough verification and validation procedures.</p>
+                        <p class="category">Category: Seasonal</p>
+                    </div>
+                    <div class="arrow">↓</div>
+                </div>
+                <div class="flowchart-item">
+                    <div class="flowchart-content">
+                        <h3 class="text-2xl font-semibold">Member of Public Relations Division <span class="job-type">Seasonal</span></h3>
+                        <p>Launching HMRPL</p>
+                        <p class="description">Managed public relations activities for the launch of HMRPL, including press releases and media engagement.</p>
+                        <p class="category">Category: Seasonal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+<section id="skills" class="container mx-auto p-8">
+    <h2 class="text-3xl font-bold mb-4">Skills</h2>
+
+    <!-- Swiper container for Skills -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide skill-item m-4">
+                <img src="html-5_5968267.png" alt="HTML Icon" class="skill-icon">
+                <p class="mt-2">HTML</p>
+            </div>
+            <div class="swiper-slide skill-item m-4">
+                <img src="css_919826.png" alt="CSS Icon" class="skill-icon">
+                <p class="mt-2">CSS</p>
+            </div>
+            <div class="swiper-slide skill-item m-4">
+                <img src="ktln.png" alt="Katalon Icon" class="skill-icon">
+                <p class="mt-2">Katalon</p>
+            </div>
+            <div class="swiper-slide skill-item m-4">
+                <img src="java-script_721671.png" alt="JavaScript Icon" class="skill-icon">
+                <p class="mt-2">JavaScript</p>
+            </div>
+            <div class="swiper-slide skill-item m-4">
+                <img src="excel_732220.png" alt="Microsoft Excel Icon" class="skill-icon">
+                <p class="mt-2">Microsoft Excel</p>
+            </div>
+            <div class="swiper-slide skill-item m-4">
+                <img src="ps.png" alt="Photoshop Icon" class="skill-icon">
+                <p class="mt-2">Photoshop</p>
+            </div>
+        </div>
+        
+        <!-- Add Pagination and Navigation Controls -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+
+
+<section id="portfolio" class="container mx-auto p-8">
+    <h2 class="text-3xl font-bold mb-4">Portfolio</h2>
+    
+    <!-- Swiper container for Graphic Design Projects -->
+    <div>
+        <h3 class="text-2xl font-semibold mb-2">Graphic Design Projects</h3>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="ib.jpg" alt="Graphic Project 1" class="project-img small-image">
+                    <p class="mt-2">Gift Card Mother Day</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="nty.jpg" alt="Graphic Project 2" class="project-img small-image">
+                    <p class="mt-2">Gift Card Christmas Day</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="poster.jpg" alt="Graphic Project 3" class="project-img small-image">
+                    <p class="mt-2">Final Project Research Poster</p>
+                </div>
+                <!-- Tambahkan slide lainnya jika diperlukan -->
+            </div>
+            <!-- Add Pagination and Navigation Controls -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    
+    <!-- Swiper container for Web Development Projects -->
+    <div class="mt-8">
+        <h3 class="text-2xl font-semibold mb-2">Web Development Projects</h3>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="me.jpg" alt="Web Project 1" class="project-img small-image">
+                    <p class="mt-2">MedStory <span class="status-label in-development">Dalam Pengembangan</span></p>
+                    <a href="https://github.com/FlazeFy/MedStory_v2" target="_blank" class="github-button">View on GitHub</a>
+                    <button class="details-button" onclick="showDetails('medstory')">Details</button>
+                </div>
+                <div class="swiper-slide">
+                    <img src="rc.jpg" alt="Web Project 2" class="project-img small-image">
+                    <p class="mt-2">AR Creative Company Profile <span class="status-label in-development">Dalam Pengembangan</span></p>
+                    <a href="https://github.com/nandaardian19/COMPANY" target="_blank" class="github-button">View on GitHub</a>
+                    <button class="details-button" onclick="showDetails('ar-creative')">Details</button>
+                </div>
+                <div class="swiper-slide">
+                    <img src="fis.jpg" alt="Web Project 3" class="project-img small-image">
+                    <p class="mt-2">Kalkulator Fisika SMP <span class="status-label in-development">Dalam Pengembangan</span></p>
+                    <a href="https://github.com/nandaardian19/fisika" target="_blank" class="github-button">View on GitHub</a>
+                    <button class="details-button" onclick="showDetails('kalkulator-fisika')">Details</button>
+                </div>
+                <div class="swiper-slide">
+                    <img src="yt.jpg" alt="Web Project 4" class="project-img small-image">
+                    <p class="mt-2">Air Strike Game <span class="status-label in-development">Dalam Pengembangan</span></p>
+                    <a href="https://github.com/nandaardian19/AirStrike" target="_blank" class="github-button">View on GitHub</a>
+                    <button class="details-button" onclick="showDetails('air-strike')">Details</button>
+                </div>
+                <div class="swiper-slide">
+                    <img src="uy.jpg" alt="Web Project 5" class="project-img small-image">
+                    <p class="mt-2">Weather APP <span class="status-label in-development">Dalam Pengembangan</span></p>
+                    <a href="https://github.com/nandaardian19/wheater" target="_blank" class="github-button">View on GitHub</a>
+                    <button class="details-button" onclick="showDetails('weather-app')">Details</button>
+                </div>
+                <div class="swiper-slide">
+                    <img src="oiu.jpg" alt="Web Project 6" class="project-img small-image">
+                    <p class="mt-2">MyQue <span class="status-label done">Done</span></p>
+                    <a href="https://github.com/nandaardian19/MyQue" target="_blank" class="github-button">View on GitHub</a>
+                    <button class="details-button" onclick="showDetails('myque')">Details</button>
+                </div>
+            </div>
+            <!-- Add Pagination and Navigation Controls -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    
+    <!-- Details Modal -->
+<div id="details-modal" class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center">
+    <div class="bg-white rounded-lg shadow-lg p-8 max-w-md w-full">
+        <h3 id="details-title" class="text-2xl font-semibold mb-4">Project Details</h3>
+        <p id="details-description" class="text-gray-700 mb-4"></p>
+        <h4 class="text-xl font-semibold mb-2">Tech Stack</h4>
+        <ul id="details-tech-stack" class="list-disc pl-5 text-gray-700"></ul>
+        <button onclick="closeDetails()" class="close-button mt-4">Close</button>
+    </div>
+</div>
+
+    
+   
+    
+    
+</section>
+
+                
+                <!-- Swiper container -->
+                <section id="achievements" class="container mx-auto p-8">
+                    <h2 class="text-3xl font-bold mb-4">Achievements</h2>
+                    
+                    <!-- Swiper container -->
+                    <div class="swiper-container">
+                        <!-- Wrapper for slides -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="Peserta Terbaik_Ananda Ardian.jpg" alt="Best Participant Enhance Our Research 2021 BEM FISIP UNDIP" class="achievement-img small-image">
+                                <p class="mt-2">Best Participant Enhance Our Research 2021 BEM FISIP UNDIP</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="level.jpg" alt="Data Analyst Intern in PT Telkom Indonesia" class="achievement-img small-image">
+                                <p class="mt-2">Data Analyst Intern in PT Telkom Indonesia</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="Asprak PBO_Ananda Ardian.jpg" alt="Assistant Practicum PBO Course" class="achievement-img small-image">
+                                <p class="mt-2">Assistant Practicum PBO Course</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="Asprak KPL_Ananda Ardian.jpg" alt="Assistant Practicum KPL Course" class="achievement-img small-image">
+                                <p class="mt-2">Assistant Practicum KPL Course</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="PPL.jpg" alt="Assistant Practicum Software Testing Course" class="achievement-img small-image">
+                                <p class="mt-2">Assistant Practicum Software Testing Course</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="HKI_Ananda Ardian.jpg" alt="My Que" class="achievement-img small-image">
+                                <p class="mt-2">My Que</p>
+                            </div>
+                            <!-- Add more slides as needed -->
+                        </div>
+                
+                        <!-- Add Pagination and Navigation Controls -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </section>
+
+                <section id="contact" class="bg-cover bg-center p-12" style="background-image: url('path/to/your/basketball-background.jpg');">
+                    <div class="container mx-auto text-center bg-white bg-opacity-90 rounded-lg p-8">
+                        <h2 class="text-4xl font-bold mb-4 text-gray-800">Get in Touch</h2>
+                        <p class="text-lg text-gray-600 mb-6">Feel free to reach out through any of the platforms below.</p>
+                        
+                        <div class="flex flex-col items-center">
+                            <!-- Form Section -->
+                            <form action="https://formspree.io/f/xgvekajo" method="POST" class="w-full max-w-lg mx-auto mb-10">
+                                <div class="mb-4">
+                                    <input type="text" name="name" placeholder="Your Name" class="w-full p-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="email" name="_replyto" placeholder="Your Email" class="w-full p-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                                </div>
+                                <div class="mb-4">
+                                    <textarea name="message" rows="5" placeholder="Your Message" class="w-full p-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-800"></textarea>
+                                </div>
+                                <button type="submit" class="w-full p-4 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-300">Send Message</button>
+                            </form>
+                            
+                            <!-- Social Media Icons Section -->
+                            <div class="contact-icons">
+                                <div class="contact-item gmail">
+                                    <a href="mailto:pratamaananda12345@gmail.com" target="_blank" class="flex flex-col items-center">
+                                        <img src="e-mail.png" alt="Gmail Icon" class="contact-icon">
+                                        <p>Gmail</p>
+                                    </a>
+                                </div>
+                                
+                                <div class="contact-item linkedin">
+                                    <a href="https://www.linkedin.com/in/ananda-ardian-pratama-putra/" target="_blank" class="flex flex-col items-center">
+                                        <img src="linkedin_2504923.png" alt="LinkedIn Icon" class="contact-icon">
+                                        <p>LinkedIn</p>
+                                    </a>
+                                </div>
+                
+                                <div class="contact-item github">
+                                    <a href="https://github.com/nandaardian19" target="_blank" class="flex flex-col items-center">
+                                        <img src="github_2504911.png" alt="GitHub Icon" class="contact-icon">
+                                        <p>GitHub</p>
+                                    </a>
+                                </div>
+                
+                                <div class="contact-item whatsapp">
+                                    <a href="https://wa.me/6282390864613" target="_blank" class="flex flex-col items-center">
+                                        <img src="whatsapp.png" alt="WhatsApp Icon" class="contact-icon">
+                                        <p>WhatsApp</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                            
+
+    <footer class="bg-yellow-500 p-4 text-center">
+        <p>&copy; 2024 Ananda Ardian Pratama Putra. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

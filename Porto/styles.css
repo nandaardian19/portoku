@@ -1,0 +1,1516 @@
+@import url('https://cdn.tailwindcss.com');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto Mono', monospace; /* Technology-themed font */
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background: rgba(0, 170, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ffd700;
+    color: #333;
+}
+
+#dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#dark-mode-toggle img {
+    width: 24px;
+    height: 24px;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+    section h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #0288d1;
+        background: linear-gradient(to right, #00aaff, #ffd700);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+
+
+section h3 {
+    font-size: 24px;
+    color: #0288d1;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    text-align: left;
+}
+
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s;
+    margin-right: 10px;
+}
+
+.skill-item:hover .skill-icon {
+    transform: scale(1.1);
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s;
+}
+
+.contact-item:hover .contact-icon {
+    transform: scale(1.1);
+}
+
+/* Container utama untuk styling section */
+/* Styling umum */
+#about {
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+/* Judul section */
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #2d3748;
+}
+
+/* Subtitle */
+#about p.text-center {
+    color: #718096;
+}
+
+/* Styling card untuk informasi */
+#about .card-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+/* Gambar profil */
+#about img {
+    width: 16rem;
+    height: auto;
+    border: 4px solid #f6ad55;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Teks detail informasi */
+#about .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 2rem;
+}
+
+#about .grid p {
+    color: #4a5568;
+    font-size: 1rem;
+}
+
+/* Warna teks penting */
+#about .highlight {
+    color: #ecc94b;
+    font-weight: 600;
+}
+
+
+ul.list-disc {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+ul.list-disc a {
+    color: #0288d1;
+    text-decoration: underline;
+}
+
+footer {
+    background: rgba(0, 170, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background: rgba(30, 30, 30, 0.8);
+}
+
+body.dark-mode section {
+    background-color: rgba(30, 30, 30, 0.9);
+}
+
+body.dark-mode nav ul li a {
+    color: #ffffff;
+}
+
+body.dark-mode nav ul li a:hover {
+    color: #ffd700;
+}
+
+body.dark-mode footer {
+    background: rgba(30, 30, 30, 0.8);
+}
+
+/* Timeline styles */
+/* Add this to your existing CSS file */
+
+/* Add this to your existing CSS file */
+
+/* Add this to your existing CSS file */
+
+/* Add this to your existing CSS file */
+
+/* Add this to your existing CSS file */
+
+.flowchart {
+    position: relative;
+    padding: 20px 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flowchart-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.arrow {
+    font-size: 2rem;
+    color: #333;
+}
+
+.flowchart h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flowchart .job-type {
+    background-color: #007bff; /* Blue background */
+    color: #fff;
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-size: 0.875rem;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.flowchart p {
+    margin-bottom: 0;
+    color: #555;
+}
+
+.flowchart .description {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #777;
+}
+
+.flowchart .category {
+    margin-top: 5px;
+    font-size: 0.875rem;
+    color: #999;
+}
+
+@media (max-width: 768px) {
+    .flowchart-item {
+        width: 100%;
+    }
+}
+
+/* Set width and height for smaller images */
+.small-image {
+    width: 150px; /* atau ukuran yang diinginkan */
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add this to your existing CSS file */
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    margin: 50px 0;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(45deg, #00aaff, #ffd700);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-item:nth-child(odd) .timeline-date,
+.timeline-item:nth-child(even) .timeline-date {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    font-size: 0.85em;
+    color: #00aaff;
+}
+
+.timeline-item:nth-child(odd) .timeline-date {
+    left: -220px;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) .timeline-date {
+    right: -220px;
+    text-align: left;
+}
+
+.timeline-item .timeline-content {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(45deg, #00aaff, #ffd700);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item:nth-child(odd):before {
+    right: -10px;
+}
+
+.timeline-item:nth-child(even):before {
+    left: -10px;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.timeline-item {
+    animation: fadeInUp 0.8s ease-in-out;
+}
+/* Add this to your existing CSS file */
+
+/* Add this to your existing CSS file */
+
+/* Add this to your existing CSS file */
+
+/* Add this to your existing CSS file */
+
+#home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+#home:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: -1;
+}
+
+#home img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 4px solid white;
+}
+
+#home .text-center {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#home h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#home p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #ddd;
+}
+
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 3rem;
+    }
+
+    #home p {
+        font-size: 1.25rem;
+    }
+
+    #home img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+
+
+#contact {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#contact .container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item {
+    flex: 1 0 150px; /* Ensure flexible layout on different screen sizes */
+    max-width: 200px;
+    text-align: center;
+    margin: 10px;
+}
+
+.contact-icon {
+    transition: transform 0.3s;
+}
+
+.contact-item:hover .contact-icon {
+    transform: scale(1.1); /* Enlarge icon on hover */
+}
+
+form input, form textarea {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #f9f9f9; /* Light background for inputs */
+}
+
+form input:focus, form textarea:focus {
+    border-color: #00aaff;
+    box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+    background-color: #fff; /* White background on focus */
+}
+
+button[type="submit"] {
+    width: 100%; /* Full width button */
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #28a745; /* Submit button background */
+    color: #fff; /* Submit button text color */
+}
+
+button[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Add this to your existing CSS file */
+
+.github-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333; /* GitHub black color */
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.github-button:hover {
+    background-color: #555; /* Slightly lighter shade for hover */
+    transform: scale(1.05);
+}
+/* Add this to your existing CSS file */
+
+.print-cv-button, .download-cv-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff; /* Button background color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.print-cv-button:hover, .download-cv-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05);
+}
+#contact {
+    padding-top: 4rem; /* Mengurangi padding atas pada section agar form lebih ke atas */
+}
+
+#contact .container {
+    max-width: 800px; /* Atur lebar maksimal container agar lebih terpusat */
+    margin: auto; /* Pusatkan container */
+}
+
+#contact h2 {
+    margin-bottom: 1rem; /* Kurangi margin bawah pada judul */
+}
+
+#contact p {
+    margin-bottom: 1.5rem; /* Kurangi margin bawah pada deskripsi */
+}
+
+#contact form {
+    margin-bottom: 2rem; /* Mengurangi jarak bawah form agar lebih rapat dengan ikon kontak */
+}
+
+#contact .contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px; /* Ukuran lingkaran ikon */
+    height: 80px;
+    border-radius: 50%; /* Membuat ikon berbentuk lingkaran */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact .contact-item:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
+}
+
+#contact .contact-item img {
+    width: 40px; /* Sesuaikan ukuran ikon */
+    height: 40px;
+    margin-bottom: 0.5rem; /* Jarak antara ikon dan teks */
+}
+
+#contact .contact-item p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4a5568; /* Warna teks default */
+}
+
+#contact .contact-item:hover p {
+    color: #ffffff; /* Warna teks saat hover */
+}
+/* Section Container */
+#contact .container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Contact Icons Container */
+#contact .flex {
+    display: flex;
+    justify-content: center; /* Memastikan ikon berada di tengah */
+    gap: 1.5rem; /* Jarak antar ikon */
+    flex-wrap: wrap; /* Membuat ikon tetap rapi saat tampilan lebih kecil */
+}
+
+/* Individual Contact Icon Styling */
+#contact .contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px; /* Ukuran lingkaran ikon */
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact .contact-item:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Image Styling */
+#contact .contact-item img {
+    width: 40px; /* Ukuran ikon gambar */
+    height: 40px;
+    margin-bottom: 0.5rem;
+}
+
+/* Text Styling */
+#contact .contact-item p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+#contact .contact-item:hover p {
+    color: #ffffff;
+}
+/* Styling untuk Swiper Container */
+.swiper-container {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+/* Styling untuk Skill Item */
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Memastikan konten di tengah secara horizontal */
+    justify-content: center; /* Memastikan konten di tengah secara vertikal */
+    text-align: center;
+}
+
+.skill-icon {
+    width: 60px; /* Sesuaikan ukuran ikon */
+    height: 60px;
+    margin-bottom: 0.5rem; /* Jarak antara ikon dan teks */
+}
+
+.skill-item p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333; /* Warna teks */
+}
+
+/* Styling untuk Swiper Pagination dan Navigation */
+.swiper-pagination {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #333; /* Warna tombol navigasi */
+}
+
+/* Add this to your existing CSS file */
+
+.status-label {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 12px;
+    margin-left: 8px;
+}
+
+.in-development {
+    background-color: #ffcc00; /* Yellow for in development */
+    color: #333;
+}
+
+.done {
+    background-color: #28a745; /* Green for done */
+    color: #fff;
+}
+
+.github-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333; /* GitHub black color */
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.github-button:hover {
+    background-color: #555; /* Slightly lighter shade for hover */
+    transform: scale(1.05);
+}
+/* Add this to your existing CSS file */
+
+/* Add this to your existing CSS file */
+
+.details-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.details-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+#details-modal {
+    z-index: 9999;
+}
+
+#details-modal .bg-white {
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.close-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff4c4c; /* Close button background color */
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: #e43e3e; /* Darker shade on hover */
+    transform: scale(1.05);
+}
+/* Add this to your existing CSS file */
+
+.details-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.details-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+#details-modal {
+    z-index: 9999;
+}
+
+#details-modal .bg-white {
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.close-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff4c4c; /* Close button background color */
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: #e43e3e; /* Darker shade on hover */
+    transform: scale(1.05);
+}
+/* Add this to your existing CSS file */
+
+.bg-yellow-100 {
+    background-color: #fefcbf; /* Light yellow background */
+}
+
+.dark .bg-yellow-800 {
+    background-color: #824b00; /* Dark yellow background for dark mode */
+}
+
+.bg-opacity-90 {
+    background-color: rgba(255, 255, 255, 0.9); /* Background opacity */
+}
+
+.dark .bg-opacity-80 {
+    background-color: rgba(0, 0, 0, 0.8); /* Background opacity for dark mode */
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Larger shadow */
+}
+/* Add this to your existing CSS file */
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+#home:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: -1;
+}
+
+#home img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 4px solid white;
+}
+
+.print-cv-button, .download-cv-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff; /* Button background color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.print-cv-button:hover, .download-cv-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #home img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #home h1 {
+        font-size: 2.5rem;
+    }
+
+    #home p {
+        font-size: 1.2rem;
+    }
+
+    .print-cv-button, .download-cv-button {
+        padding: 8px 16px;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #home h1 {
+        font-size: 2rem;
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
+
+    .print-cv-button, .download-cv-button {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+}
+
+#about {
+    padding: 20px;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+}
+
+#about .text-center {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #about .flex-col {
+        flex-direction: column;
+    }
+
+    #about .md\\:flex-row {
+        flex-direction: column;
+    }
+
+    #about .md\\:pl-8 {
+        padding-left: 0;
+    }
+
+    #about .text-left {
+        text-align: center;
+    }
+
+    #about .grid {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    #about h2 {
+        font-size: 2.5rem;
+    }
+
+    #about p {
+        font-size: 1rem;
+    }
+
+    #about .grid-cols-2 {
+        grid-template-columns: 1fr;
+    }
+}
+/* Add this to your existing CSS file */
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Experience Section */
+#experience {
+    padding: 20px;
+}
+
+.flowchart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flowchart-item {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.flowchart-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.arrow {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Skills Section */
+#skills {
+    padding: 20px;
+}
+
+.skill-item {
+    text-align: center;
+}
+
+.skill-icon {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .flowchart-item, .skill-item {
+        max-width: 100%;
+    }
+
+    .skill-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .arrow {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .flowchart-item, .skill-item {
+        max-width: 100%;
+    }
+
+    .skill-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .arrow {
+        font-size: 1rem;
+    }
+}
+
+/* Swiper Styles */
+.swiper-container {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-pagination {
+    bottom: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #333;
+}
+/* Add this to your existing CSS file */
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 20px;
+}
+
+#portfolio h2,
+#portfolio h3 {
+    text-align: center;
+}
+
+.swiper-container {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.status-label {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 12px;
+    margin-left: 8px;
+    background-color: #ffcc00; /* Yellow for in development */
+    color: #333;
+}
+
+.status-label.done {
+    background-color: #28a745; /* Green for done */
+    color: #fff;
+}
+
+.github-button,
+.details-button,
+.close-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff; /* Button background color */
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.github-button:hover,
+.details-button:hover,
+.close-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .swiper-slide {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .status-label {
+        margin-top: 10px;
+    }
+
+    .github-button,
+    .details-button,
+    .close-button {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-img {
+        width: 100%;
+    }
+
+    .status-label {
+        font-size: 0.625rem;
+    }
+
+    .github-button,
+    .details-button,
+    .close-button {
+        width: 100%;
+        font-size: 0.875rem;
+    }
+}
+
+/* Modal Styles */
+#details-modal {
+    z-index: 9999;
+}
+
+#details-modal .bg-white {
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Add this to your existing CSS file */
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Achievements Section */
+#achievements {
+    padding: 20px;
+}
+
+#achievements h2 {
+    text-align: center;
+}
+
+.swiper-container {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.achievement-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-img.small-image {
+    max-width: 80%; /* Adjust the size for small images */
+}
+
+/* Add this to your existing CSS file */
+
+/* Contact Section */
+#contact {
+    padding: 20px;
+}
+
+#contact h2,
+#contact p {
+    text-align: center;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#contact .contact-item {
+    width: 120px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#contact .contact-item:hover {
+    transform: translateY(-5px);
+}
+
+#contact .contact-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+#contact .contact-item p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+#contact .contact-item:hover p {
+    color: #fff;
+}
+
+/* Color themes for contact items */
+.contact-item.gmail:hover {
+    background-color: #EA4335;
+}
+
+.contact-item.linkedin:hover {
+    background-color: #0077b5;
+}
+
+.contact-item.github:hover {
+    background-color: #333;
+}
+
+.contact-item.whatsapp:hover {
+    background-color: #25d366;
+}
+
+/* Flexbox alignment */
+.contact-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #contact form {
+        width: 90%;
+    }
+
+    .contact-item {
+        width: 100px;
+        margin: 10px 5px;
+    }
+
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .contact-item p {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-item {
+        width: 80px;
+        margin: 5px;
+    }
+
+    .contact-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact-item p {
+        font-size: 0.75rem;
+    }
+
+    .contact-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Footer Styling */ footer { 
+    background-color: rgba(0, 170, 255, 0.8); 
+    padding: 20px 0; 
+    text-align: center; 
+}
